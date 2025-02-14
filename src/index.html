@@ -10,34 +10,42 @@
 </head>
 
 <body class="font-roboto">
+    <!-- Header -->
     <header class="bg-primaryblue border-b-2 border-secondaryblue">
-        <div class="container max-w-screen-xl mx-auto py-2 flex justify-between">
+        <div class="container max-w-screen-xl mx-auto flex justify-between">
             <div>
-                <a href="#header"><img class="py-3 w-32" src="./images/goarn-logo.svg" alt="GOARN Logo"></a>
+                <a href="#header"><img class="py-3 w-28" src="./images/goarn-logo.svg" alt="GOARN Logo"></a>
             </div>
             <div class="flex">
                 <ul class="text-lightblue flex border-r-2 border-secondaryblue
- px-4 items-center">
-                    <li class="px-4"><a href="">Home</a></li>
-                    <li class="px-4"><a class="flex" href="">About<svg class="pl-1 pt-1 w-4"
+ px-2 items-center">
+                    <li class="px-2"><a href="">Home</a></li>
+                    <li class="px-2 relative group"><a class="flex" href="">About<svg class="pl-1 pt-1 w-4 font-bold"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                            </svg>
+                        </a>
+                        <ul
+                            class="absolute left-6rem mt-2rem w-48 text-textgray shadow-lg rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <li class="px-4 py-2"><a href="#">What we do</a></li>
+                            <li class="px-4 py-2"><a href="#">Events</a></li>
+                            <li class="px-4 py-2"><a href="#">Updates</a></li>
+                            <li class="px-4 py-2"><a href="#">Stories from the field</a></li>
+                        </ul>
+                    </li>
+                    <li class="px-2"><a href="">GOARN Documents</a></li>
+                    <li class="px-2"><a class="flex" href="">Updates <svg class="pl-1 pt-1 w-4 font-bold"
                                 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                 stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
                             </svg>
                         </a>
                     </li>
-                    <li class="px-4"><a href="">GOARN Documents</a></li>
-                    <li class="px-4"><a class="flex" href="">Updates <svg class="pl-1 pt-1 w-4"
-                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="px-4"><a href="">Project and Activities</a></li>
-                    <li class="px-4"><a href="">Contact</a></li>
+                    <li class="px-2"><a href="">Project and Activities</a></li>
+                    <li class="px-2"><a href="">Contact</a></li>
                 </ul>
-                <svg class="w-14 px-4 py-2 text-lightblue mx-2 text-center" xmlns="http://www.w3.org/2000/svg"
+                <svg class="w-14 px-4 py-2 text-lightblue mx-2 text-center font-bold" xmlns="http://www.w3.org/2000/svg"
                     fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="">
                     <path stroke-linecap="round" stroke-linejoin="round"
                         d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
@@ -45,7 +53,9 @@
             </div>
         </div>
     </header>
-    <section class="flex bg-[url('./images/hero-bg.png')] h-screen" style="height: calc(100vh - 85.58px);">
+
+    <!-- Hero Section -->
+    <section class="flex bg-[url('./images/hero-bg.png')] h-screen bg-cover">
         <div class="container max-w-screen-xl mx-auto flex">
             <div class="w-1/2">
                 <h1 class="pt-24 mt-10 text-orange font-bold text-6xl leading-tight">GLOBAL
@@ -67,11 +77,12 @@
             </div>
         </div>
     </section>
-    </section>
+
+    <!-- GOARN focus & trainning -->
     <section class="flex">
-        <div class="p-4 flex w-1/2 bg-tertiary ">
+        <div class="p-4 flex w-1/2 bg-tertiary">
             <div class="w-1/2"><img src="./images/focalpoint-access.webp" alt=""></div>
-            <div class="mt-8 ml-5 ">
+            <div class="mt-8 ml-5">
                 <h2 class="text-primaryblue font-medium text-2xl">GOARN</h2>
                 <h4 class="text-primaryblue font-medium text-xl">Focal points access</h4>
                 <svg class="mt-10 text-primarygray font-light w-10" xmlns="http://www.w3.org/2000/svg" fill="none"
@@ -80,9 +91,9 @@
                 </svg>
             </div>
         </div>
-        <div class="p-4 flex w-1/2 bg-tertiary ">
+        <div class="p-4 flex w-1/2 bg-tertiary">
             <div class="w-1/2"><img src="./images/virtual-trainning-plotforn.webp" alt=""></div>
-            <div class="mt-8 ml-5 ">
+            <div class="mt-8 ml-5">
                 <h2 class="text-primaryblue font-medium text-2xl">GOARN</h2>
                 <h4 class="text-primaryblue font-medium text-xl">Virtual Trainning Platform</h4>
                 <svg class="mt-10 text-primarygray font-light w-10" xmlns="http://www.w3.org/2000/svg" fill="none"
@@ -92,92 +103,381 @@
             </div>
         </div>
     </section>
-    <section class="pt-24">
-        <h3 class="text-primaryblue font-medium text-2xl text-center">About Us</h3>
-        <h6 class="text-primaryblue text-center">Ultimate experiences with story, emotion and purpose</h6>
-        <div class="flex mt-4 mx-4">
-            <div class="w-1/2">
-                <img class="" src="./images/about-goarn.png" alt="About GOARN">
-            </div>
-            <div class="grid grid-rows-2 gap-4 w-1/2">
-                <div class="mt-6 mx-4 bg-primaryblue border-b-2 border-orange">
-                    <h3 class="text-white p-5">About GOARN</h3>
-                    <P class="text-tertiaryblue text-sm p-5">We are a WHO network of over 310 technical institutions and
-                        networks
-                        globally that respond to
-                        acute public health events with the deployment of staff and resources to affected countries.
-                        Coordinated by an Operational Support Team based at the WHO headquarters in Geneva and governed
-                        by a Steering committee, we aim to deliver rapid and effective support to prevent and control
-                        infectious diseases outbreaks and public health emergencies when requested.</P>
-                </div>
 
-                <div class="flex border-b-2 border-orange">
-                    <div class="w-1/2 bg-secondarygray">
-                        <h4 class="text-base font-semibold">GOARN Steering Committee</h4>
-                        <p class="text-sm">The Steering Committee (SCOM) of the Global outbreak alert and response
-                            network (GOARN) is a
-                            representative body of 21 partner institutions that oversee the planning, implementation and
-                            evaluation of the Network activities and strategic goals. The Committee fulfills the
-                            following functions:</p>
-                        <ul>
-                            <li class="list-disc ml-4">approving and monitoring the implementation of the Network’s work
-                                plan
-                            </li>
-                            <li class="list-disc ml-4">approving the terms of reference and monitoring the activities of
-                                Technical Working Groups and Standing Sub-Committees</li>
-                            <li class="list-disc ml-4">approving the addition of new institutions/organizations/networks
-                                to
-                                the Network.</li>
-                            <li class="list-disc ml-4">advocating for the network and representing the network at key
-                                public
-                                health events.
-                            </li>
-                        </ul>
+    <!-- About Us -->
+    <section class="mt-24 mb-2">
+        <div class="max-w-[1200px] mx-auto">
+            <div class="mb-4">
+                <h1 class="text-center text-3xl text-primaryblue font-semibold">About us</h1>
+                <p class="text-sm text-center text-gray-600">ultimate experiences with story,emotion and purpose</p>
+            </div>
+
+            <div class=" mx-auto p-6 grid grid-cols-1 gap-6 lg:grid-cols-2 ">
+                <div>
+                    <img src="images/about-goarn.png" alt="Conference Image" class="w-full">
+                </div>
+                <div class="flex flex-col space-y-6">
+                    <div class="bg-primaryblue p-4 border-b-2 border-orange">
+                        <h2 class="font-semibold text-tertiarygray text-base">About GOARN</h2>
+                        <p class="mt-2 text-sm text-tertiarygray">
+                            We are a WHO network of over 310 technical institutions and networks globally that respond
+                            to acute public
+                            health events with the deployment of staff and resources to affected countries. Coordinated
+                            by an
+                            Operational
+                            Support Team based at the WHO headquarters in Geneva and governed by a Steering committee,
+                            we aim to
+                            deliver
+                            rapid and effective support to prevent and control infectious diseases outbreaks and public
+                            health
+                            emergencies
+                            when requested.
+                        </p>
                     </div>
 
-                    <div class="w-1/2 bg-secondarygray
-">
-                        <h4 class="text-base font-semibold">GOARN Operational Support Team</h4>
-                        <p class="text-sm">The GOARN Operational support team (OST) is based at the World health
-                            Organization in Geneva, Switzerland and in various WHO Regional Offices supporting outbreak
-                            response at the regional level. The OST facilitates the day to day running of the network
-                            and coordinates outbreak response missions, network activities and communications for the
-                            Network. You can reach the Operational support team for more information on how to get
-                            involved with GOARN.</p>
+                    <div class="grid grid-cols-2 gap-4">
+
+                        <div class="bg-secondarygray p-6 border-b-2 border-orange">
+                            <h3 class="font-semibold text-base">GOARN Steering Committee</h3>
+                            <p class="text-sm mt-2 text-textgray">
+                                The Steering Committee (SCOM) of the Global outbreak alert and response network (GOARN)
+                                is a
+                                representative body of 21 partner institutions that oversee the planning, implementation
+                                and evaluation
+                                of
+                                the Network activities and strategic goals. The Committee fulfills the following
+                                functions:
+                            </p>
+                            <ul class="list-disc list-outside text-textgray text-sm mt-2 space-y-1 pl-3">
+                                <li>approving and monitoring the implementation of the Network’s work plan</li>
+                                <li>approving the terms of reference and monitoring the activities of Technical Working
+                                    Groups and
+                                    Standing Sub-Committees</li>
+                                <li>approving the addition of new institutions/organizations/networks to the Network.
+                                </li>
+                                <li>advocating for the network and representing the network at key public health events.
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-secondarygray p-6 border-b-2 border-orange">
+                            <h3 class="font-semibold text-base">GOARN Operational Support Team</h3>
+                            <p class="text-sm text-textgray mt-2 ">
+                                The GOARN Operational support team (OST) is based at the World health Organization in
+                                Geneva,
+                                Switzerland
+                                and in various WHO Regional Offices supporting outbreak response at the regional level.
+                                The OST
+                                facilitates the day to day running of the network and coordinates outbreak response
+                                missions, network
+                                activities and communications for the Network. You can reach the Operational support
+                                team for more
+                                information on how to get involved with GOARN.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center py-8">
+                <button class="text-sm font-base rounded-md px-6 py-3 bg-orange text-white">
+                    Know more about us
+                </button>
+            </div>
+    </section>
+    </div>
+
+    <!-- Updates -->
+    <section class="container mx-auto bg-primaryblue pt-20">
+        <div class="text-center pb-5">
+            <h2 class="text-orange text-2xl">Updates</h2>
+            <p class="text-paleblue">Explore our latest news,events and stories</p>
+        </div>
+
+        <div class="flex  border-t-2 border-blue-950">
+            <div class="w-1/2 text-center pl-10 pr-10 px-6 border-r-2 border-blue-950 pt-5">
+                <h3 class="text-xl font-semibold text-tertiarygray">What we do</h3>
+                <p class="text-paleblue mb-8">Global outbreak alert and response Network</p>
+                <iframe class="" width="682" height="354" src="https://www.youtube.com/embed/FqyA2w4ITuo"
+                    title="Go with GOARN" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe class="mt-12" width="682" height="354" src="https://www.youtube.com/embed/IFYueB_Dy9I"
+                    title="WHO: Global Outbreak Alert and Response Network (GOARN)" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            <div class="w-1/2 pl-10 pr-10 pt-5">
+                <h3 class="text-xl text-center font-semibold text-tertiarygray">Updates and events</h3>
+                <p class="text-paleblue text-center mb-8">Take a look at our latest news and events</p>
+                <div class="border-x-lightblue border-b-orange blue my-5 shadow-sm border-2 flex">
+                    <div class="w-48 h-48 overflow-hidden">
+                        <img class="max-w-max h-full p-1" src="./images/updates&events1.JPG">
+                    </div>
+                    <div class="flex-1 pl-5">
+                        <h4 class="text-base font-semibold text-secondarygray my-2">Go Data released a new virtual
+                            course
+                        </h4>
+                        <p class="text-paleblue">Excepteur sint occaecat cupidatat non proident,sunt in culpa qui
+                            officia deserunt
+                            mollit anim id est</p>
+                        <h4 class="text-orange pt-16">Join Webinar</h4>
+                    </div>
+                </div>
+
+                <div class="border-x-lightblue border-b-orange blue my-5 shadow-sm border-2 flex">
+                    <div class="w-48 h-48 overflow-hidden">
+                        <img class="max-w-max h-full p-1" src="./images/updates&events3.JPG">
+                    </div>
+                    <div class="flex-1 pl-5">
+                        <h4 class="text-base font-semibold text-secondarygray my-2">Strengthening Global Readiness:
+                            GOARN
+                            DiSC
+                            Coordination Board Launched in Amman
+                        </h4>
+                        <p class="text-paleblue">5-6 February 2025 | Amman, Jordan – The
+                            Global Outbreak Alert and Response Network (GOARN) convened a pivotal
+                            consultative meeting in Amman, Jordan, on 5–6 February 2025 to establish</p>
+                        <h4 class="text-orange pt-16">Register</h4>
+                    </div>
+                </div>
+
+                <div class="border-x-lightblue border-b-orange blue my-5 shadow-sm border-2 flex">
+                    <div class="w-48 h-48 overflow-hidden">
+                        <img class="max-w-max h-full p-1" src="./images/updates&events3.JPG">
+                    </div>
+                    <div class="flex-1 pl-5">
+                        <h4 class="text-base font-semibold text-secondarygray my-2">GOARN's Remote Support to Myanmar’s
+                            Health Response
+                            Amid Ongoing Crisis
+                        </h4>
+                        <p class="text-paleblue">he conflict in Myanmar has resulted
+                            in a severe humanitarian crisis, with over 18.6 million people requiring
+                            assistance in 2024. The collapse of the public healthcare system, combined</p>
+                        <h4 class="text-orange pt-16">Register</h4>
                     </div>
                 </div>
             </div>
         </div>
-        <button class="rounded text-center bg-orange px-6 py-2">Know more about us</button>
+
+        <div class="text-center py-8">
+            <button class="text-sm font-base rounded-md px-6 py-3 bg-orange text-white">
+                See all updates
+            </button>
+        </div>
     </section>
 
-    <section class="bg-primaryblue pt-24 pb-5">
-        <h3 class="text-orange font-medium text-2xl text-center">Updates</h3>
-        <h6 class="text-paleblue text-sm text-center">Explore our updates, events and stories</h6>
-        <div class="flex">
-            <div class="m-5 w-1/2 border-t-2 border-r-2 border-secondaryblue
-">
-                <h4 class="text-base text-xl text-white text-center font-semibold">What we do</h4>
-                <h6 class="text-paleblue text-sm text-center">Global Outbreak Alert and Response Network</h6>
-                <iframe class="p-5 w-full aspect-video"
-                    src="https://www.youtube.com/embed/FqyA2w4ITuo?si=XYVn1xWqFugkUp2L" title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-                <iframe class="p-5 w-full aspect-video"
-                    src="https://www.youtube.com/embed/IFYueB_Dy9I?si=AH_cdT-f7Gvmr-Zw" title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <!-- Stories -->
+    <section class="bg-palegreen py-12">
+        <div class="max-w-[1200px] mx-auto">
+            <div>
+                <h2 class="text-primaryblue text-xl mb-2 text-center font-semibold">Stories from the field</h2>
+                <p class="text-paleblue mb-4 text-center">I love GOARN and work with GOARN</p>
             </div>
-            <div class="w-1/2 border-t-2 border-l-2 border-secondaryblue
-">
-                <h4 class="text-base font-semibold">What we do</h4>
-                <h6 class="text-paleblue">Global Outbreak Alert and Response Network</h6>
+            <div class="flex gap-6">
+                <div class="bg-white text-center p-4">
+                    <img src="./images/stories-01.jpg" alt="Takuya Adachi"
+                        class="w-full h-[200px] overflow-hidden object-cover">
+                    <h3 class="text-lg font-semibold mt-2">Takuya Adachi</h3>
+                    <p class="text-primarygray">Doctor</p>
+                </div>
+
+                <div class="bg-white text-center p-4">
+                    <img src="./images/stories-02.jpg" alt="Basel Karo"
+                        class="w-[100%] h-[200px] overflow-hidden object-cover">
+                    <h3 class="text-lg font-semibold mt-2">Basel Karo</h3>
+                    <p class="text-primarygray">Epidemiologist</p>
+                </div>
+
+                <div class="bg-white text-center p-4">
+                    <img src="./images/stories-03.jpg" alt="Ximena Tolosa"
+                        class="w-[100%] h-[200px] overflow-hidden object-cover">
+                    <h3 class="text-lg font-semibold mt-2">Ximena Tolosa</h3>
+                    <p class="text-primarygray">Epidemiologist</p>
+                </div>
+
+                <div class="bg-white text-center p-4">
+                    <img src="./images/stories-04.jpg" alt="Basel Karo"
+                        class="w-[100%] h-[200px] overflow-hidden object-cover">
+                    <h3 class="text-lg font-semibold mt-2">Basel Karo</h3>
+                    <p class="text-primarygray">Epidemiologist</p>
+                </div>
+
+                <div class="bg-white text-center p-4">
+                    <img src="./images/stories-05.jpg" alt="Basel Karo"
+                        class="w-[100%] h-[200px] overflow-hidden object-cover">
+                    <h3 class="text-lg font-semibold mt-2">Basel Karo</h3>
+                    <p class="text-primarygray">Epidemiologist</p>
+                </div>
+
+                <div class="bg-white text-center p-4">
+                    <img src="./images/stories-06.jpg" alt="Basel Karo"
+                        class="w-[100%] h-[200px] overflow-hidden object-cover">
+                    <h3 class="text-lg font-semibold mt-2">Basel Karo</h3>
+                    <p class="text-primarygray">Epidemiologist</p>
+                </div>
+            </div>
+
+            <div class="text-center mt-6">
+                <button class="text-sm font-base rounded-md px-6 py-3 bg-orange text-white">
+                    See all stories
+                </button>
             </div>
         </div>
     </section>
+
+    <!-- Projects and Activities -->
+    <section class="pt-32">
+        <div class="max-w-[1200px] mx-auto">
+            <h2 class="text-primaryblue text-center text-3xl font-bold pb-12">Projects and activities</h2>
+            <div class="flex space-x-4">
+                <div class="  bg-[url('./images/hero-bg.png')] w-[25%] overflow-hidden h-48 bg-cover">
+                    <h3 class="ml-4 mt-7 text-white text-lg">GOARN Weekly Operations Coordination Call
+                    </h3>
+                </div>
+
+                <div class="  bg-[url('./images/hero-bg.png')] w-[25%] overflow-hidden h-48 bg-cover">
+                    <h3 class="ml-4 mt-7 text-white text-lg">GOARN Steering Committee Selection 2022
+                    </h3>
+                </div>
+
+                <div class="  bg-[url('./images/hero-bg.png')] w-[25%] overflow-hidden h-48 bg-cover">
+                    <h3 class="ml-4 mt-7 text-white text-lg">GOARN Online Global Consultation on Contact Tracing
+                    </h3>
+                </div>
+
+                <div class="  bg-[url('./images/hero-bg.png')] w-[25%] overflow-hidden h-48 bg-cover">
+                    <h3 class="ml-4 mt-7 text-white text-lg">COVID-19 Response Research
+                    </h3>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <button class="text-sm font-base rounded-md px-6 py-3 bg-orange text-white">
+                    See all
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="mt-12 mb-24">
+        <div class="max-w-[1200px] mx-auto">
+            <div class="flex space-x-6">
+                <div class="w-[35%] bg-primaryblue p-6">
+                    <h2 class="text-2xl font-bold mb-4 text-orange">Contact us</h2>
+                    <p class="mb-6">Questions, bug reports, feedback, feature requests - We're here for
+                        it
+                        all.</p>
+
+                    <div class="mb-6 text-white border-b-2 border-primaryblue pb-6">
+                        <h3 class="font-semibold text-lg mb-2">Address</h3>
+                        <p>World Health Organization,</p>
+                        <p>Avenue Appia 20,</p>
+                        <p>Geneva,</p>
+                        <p>Switzerland - 1211</p>
+                    </div>
+
+                    <div class="bg-primaryblue p-3 text-white">
+                        <h3 class="font-semibold mb-1">Connect With GOARN</h3>
+                        <p class="mb-2">twitter/WHOGOARN</a></p>
+                        <p class="mb-1">linkedin/WHOGOARN</p>
+                    </div>
+                </div>
+
+                <div class="w-[65%] p-6 bg-tertiarygray">
+                    <form>
+                        <div class="grid grid-cols-2 gap-5">
+                            <div>
+                                <label class="block font-semibold mb-1">First Name</label>
+                                <input type="text" placeholder="Enter your first name..."
+                                    class="w-full p-3 border border-gray-300 rounded-sm">
+                            </div>
+                            <div>
+                                <label class="block font-semibold mb-1">Last Name</label>
+                                <input type="text" placeholder="Enter your last name..."
+                                    class="w-full p-3 border border-gray-300 rounded-sm">
+                            </div>
+                        </div>
+
+                        <div class="mt-4">
+                            <label class="block font-semibold mb-1">Email</label>
+                            <input type="email" placeholder="Enter your email address..."
+                                class="w-full p-3 border border-gray-300 rounded-sm">
+                        </div>
+
+                        <div class="mt-4">
+                            <label class="block font-semibold mb-1">Message</label>
+                            <textarea placeholder="Enter message"
+                                class="w-full p-3 border border-gray-300 rounded-sm h-32 "></textarea>
+                        </div>
+
+                        <div class="mt-4 flex flex-col">
+                            <div class="mb-4">
+                                <input type="checkbox" id="captcha" class="mr-2">
+                                <label for="captcha">I'm not a robot</label>
+                            </div>
+                            <div class="text-center py-8">
+                                <button class="text-sm font-base rounded-md px-6 py-3 bg-orange text-white">
+                                    Send
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-palegreen">
+        <div class="max-w-[1200px] mx-auto">
+            <div class="pt-12 border-b-2 border-primarygray">
+                <h2 class="text-primaryblue text-center font-bold text-3xl">Contact us</h2>
+                <p class="text-gray-800 mb-4 text-center">
+                    Questions,bug reports,feedback,feature requests-We're here for it all.
+                </p>
+            </div>
+
+            <div class="flex justify-between pt-6 text-primaryblue font-bold">
+                <h4>Address</h4>
+                <h4>Connect with GOARN</h4>
+            </div>
+            <div class="flex justify-between text-gray-800  pb-12">
+                <p class="">
+                    World Health Organization, Avenue Appia 20, Geneva, Switzerland - 1211
+                </p>
+                <ul class="flex space-x-6">
+                    <li class=" ">twitter/WHOGOARN</li>
+                    <li class=" ">linkedin/WHOGOARN</li>
+                    <li class=" ">Contact form</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-950">
+        <div class="max-w-[1200px] mx-auto">
+            <div class="flex justify-between items-center pt-8">
+                <a href="logo">
+                    <img class="w-28 " src="./images/goarn-logo.svg">
+                </a>
+                <ul class="flex text-white">
+                    <li class="border-r-2 border-white pr-5">World Health Organization</li>
+                    <li class="pl-5">Contact</li>
+                </ul>
+            </div>
+            <div class="pt-10">
+                <ul class="flex justify-center text-white">
+                    <li class="border-r-2 border-white pr-5">WHO 2023</li>
+                    <li class="border-r-2 border-white px-5 ">Privacy police</li>
+                    <li class="pl-5">Terms of use</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
 
 </body>
 
